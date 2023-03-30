@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.model.RailwayReservastion" table="railwayservice">
+        <id name="passengerId" type="int" column="p_id">
+            <generator class="native"/>
+        </id>
+        <property name="passengerName" column="p_name" type="java.lang.String"/>
+        <property name="passengerAge" column="p_age" type="int"/>
+        <property name="amountPaid" column="p_amount" type="double"/>
+        <property name="choosenSeat" column="p_seat" type="int"/>
+
+        <property name="seniorCitizen" column="is_senior" type="boolean"/>
+
+        <property name="typeOfReservasion" column="r_type" type="java.lang.String"/>
+
+    </class>
+</hibernate-mapping>
